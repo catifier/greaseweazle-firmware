@@ -237,7 +237,7 @@ int main(void)
            *(volatile uint16_t *)0x1ffff7f0,
            *(volatile uint16_t *)0x1ffff7f2);
 
-    flash_kb = *(volatile uint16_t *)0x1ffff7e0;
+    flash_kb = 128;
     printk("Flash Size = %ukB (", flash_kb);
     switch (flash_kb) {
     case 16:
